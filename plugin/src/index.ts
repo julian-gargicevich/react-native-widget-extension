@@ -22,7 +22,7 @@ const withLiveActivities: ConfigPlugin<{
 ) => {
   const targetName = `${IOSConfig.XcodeUtils.sanitizedName(
     config.name
-  )}Widgets`;
+  )}Widget`;
   const bundleIdentifier = `${config.ios?.bundleIdentifier}.${targetName}`;
 
   config.ios = {
